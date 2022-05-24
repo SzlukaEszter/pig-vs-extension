@@ -9,6 +9,11 @@
       "body": "DEFINE ${1:alias} ${2:expression};",
       "description": "Assigns an alias to a UDF function or a streaming command."
    },
+   "DEFINE_Full": {
+      "prefix": "DEFINE",
+      "body": "DEFINE'${1:alias}' ( '${2:parameters}' ) { RETURN '${3:alias2}' $'${4:alias2}' ='${5:expression2}' };",
+      "description": "Assigns an alias to a UDF function or a streaming command."
+   },
    "FOREACH": {
       "prefix": "FOREACH",
       "body": "FOREACH '${1:alias}' GENERATE '${2:expression}';",
